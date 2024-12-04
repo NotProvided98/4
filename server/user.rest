@@ -1,0 +1,42 @@
+#http://localhost:3000
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+  "email": "d@gmail.com",
+  "password": "1"
+}
+###
+GET http://localhost:3000/ads/all
+
+###
+DELETE  http://localhost:3000/ads/deleteAd
+Content-Type: application/json
+Cookie:access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzRjM2UzYWM5ZWI2NGJlZGVhZTE2YzgiLCJlbWFpbCI6ImRAZ21haWwuY29tIiwiaWF0IjoxNzMzMTM2MTQxLCJleHAiOjE3MzMxMzk3NDF9.ChmDJ5XlbhGhrTUFJUKjHjuAzrxhJ3NP0eStT5FoJVA; Max-Age=3600; Path=/; Expires=Mon, 02 Dec 2024 11:42:21 GMT; HttpOnly; SameSite=Strict
+
+{
+    "_id":"674d77e3787a8a5e45fa0edc" 
+}
+###
+PUT http://localhost:3000/ads/updateAd
+Content-Type: application/json
+
+{
+    "_id":"674c686dc9eb64bedeae16cf",
+    "title":"casxac",
+    "text":"dczczc"
+}
+###
+POST http://localhost:3000/ads/createAd
+Content-Type: application/json
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzRjM2UzYWM5ZWI2NGJlZGVhZTE2YzgiLCJlbWFpbCI6ImRAZ21haWwuY29tIiwiaWF0IjoxNzMzMTI5MzA4LCJleHAiOjE3MzMxMzI5MDh9.DaM6KViESBevU0kxK_dz28R1axZTLAU4libfOCtfnnU; Max-Age=3600; Path=/; Expires=Mon, 02 Dec 2024 09:48:28 GMT; HttpOnly; SameSite=Strict
+
+{
+    "title":"title",
+    "text":"text"
+}
+
+###
+GET http://localhost:3000/user/token
+Cookie: access_token=eyJhbGciOiJII6IkpXVCJ9.eyJ1c2VySWQiOiI2NzRjM2UzYWM5ZWI2NGJlZGVhZTE2YzgiLCJlbWFpbCI6ImRAZ21haWwuY29tIiwiaWF0IjoxNzMzMjIzMDY0LCJleHAiOjE3MzMyMjY2NjR9.gnIDL5fFo-rAvQJXDF-ODTrLdqnPy8VOViQeVbtf-ck; Max-Age=3600; Path=/; Expires=Tue, 03 Dec 2024 11:51:04 GMT; HttpOnly; SameSite=Strict

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXIF Editor</title>
+  <script src="https://cdn.jsdelivr.net/npm/piexifjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script> <!-- Include EXIF.js -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="image-container">
+    <h2>Uploaded Image</h2>
+    <img id="uploaded-image" src="" alt="Uploaded Image">
+  </div>
+
+  <div id="metadata-container">
+    <h2>Edit EXIF Data</h2>
+    <label>Application Record Version</label>
+    <input type="text" id="application_record_version" placeholder="Software Version">
+    
+    <label>Date Created (Read only, unchangeable)</label>
+    <input type="text" id="date_created" placeholder="Date Created">
+    
+    <label>Maker</label>
+    <input type="text" id="maker" placeholder="Maker">
+    
+    <label>Model</label>
+    <input type="text" id="model" placeholder="Model">
+    
+    <label>LightSource (Number only)</label>
+    <input type="text" id="light_source" placeholder="LightSource">
+    
+    <label>Choose Image</label>
+    <input type="file" id="file-input">
+    
+    <button id="download-button">Download Image with Modified EXIF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
