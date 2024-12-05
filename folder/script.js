@@ -38,7 +38,7 @@ document.getElementById("download-button").addEventListener("click", function ()
     console.log(exifObj);
 
     exifObj['0th'][piexif.ImageIFD.Software] = newSoftware;
-    exifObj['0th'][piexif.ImageIFD.DateTime] = newDate;
+    exifObj['Exif'][piexif.ExifIFD.DateTimeOriginal] = newDate;
     exifObj['0th'][piexif.ImageIFD.Make] = newMake;
     exifObj['0th'][piexif.ImageIFD.Model] = newModel;
     exifObj['Exif'][piexif.ExifIFD.LightSource] = newLightSource;
